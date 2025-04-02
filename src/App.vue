@@ -42,7 +42,63 @@ import {
                     Woche 2
                 </RouterLink>
                 <div class="absolute left-0 mt-1 hidden group-hover:block bg-white shadow-lg rounded-md min-w-[160px] z-10">
-                
+
+                </div>
+            </div>
+            <div class="relative group">
+                <RouterLink to="/woche2" class="px-4 py-2 hover:bg-gray-100 rounded transition">
+                    Woche 3
+                </RouterLink>
+                <div class="absolute left-0 mt-1 hidden group-hover:block bg-white shadow-lg rounded-md min-w-[160px] z-10">
+
+                </div>
+            </div>
+            <div class="relative group">
+                <RouterLink to="/woche2" class="px-4 py-2 hover:bg-gray-100 rounded transition">
+                    Woche 4
+                </RouterLink>
+                <div class="absolute left-0 mt-1 hidden group-hover:block bg-white shadow-lg rounded-md min-w-[160px] z-10">
+
+                </div>
+            </div>
+            <div class="relative group">
+                <RouterLink to="/woche2" class="px-4 py-2 hover:bg-gray-100 rounded transition">
+                    Woche 5
+                </RouterLink>
+                <div class="absolute left-0 mt-1 hidden group-hover:block bg-white shadow-lg rounded-md min-w-[160px] z-10">
+
+                </div>
+            </div>
+            <div class="relative group">
+                <RouterLink to="/woche2" class="px-4 py-2 hover:bg-gray-100 rounded transition">
+                    Woche 6
+                </RouterLink>
+                <div class="absolute left-0 mt-1 hidden group-hover:block bg-white shadow-lg rounded-md min-w-[160px] z-10">
+
+                </div>
+            </div>
+            <div class="relative group">
+                <RouterLink to="/woche2" class="px-4 py-2 hover:bg-gray-100 rounded transition">
+                    Woche 7
+                </RouterLink>
+                <div class="absolute left-0 mt-1 hidden group-hover:block bg-white shadow-lg rounded-md min-w-[160px] z-10">
+
+                </div>
+            </div>
+            <div class="relative group">
+                <RouterLink to="/woche2" class="px-4 py-2 hover:bg-gray-100 rounded transition">
+                    Woche 8
+                </RouterLink>
+                <div class="absolute left-0 mt-1 hidden group-hover:block bg-white shadow-lg rounded-md min-w-[160px] z-10">
+
+                </div>
+            </div>
+            <div class="relative group">
+                <RouterLink to="/woche2" class="px-4 py-2 hover:bg-gray-100 rounded transition">
+                    Woche 9
+                </RouterLink>
+                <div class="absolute left-0 mt-1 hidden group-hover:block bg-white shadow-lg rounded-md min-w-[160px] z-10">
+
                 </div>
             </div>
         </nav>

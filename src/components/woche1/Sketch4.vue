@@ -1,12 +1,12 @@
 <template>
-<div ref="canvasContainer"></div>
+<div ref="canvasContainer" class="mt-15 flex justify-center"></div>
 </template>
 
 <script>
 import p5 from 'p5';
 
 export default {
-    name: 'ImageManipulation',
+    name: 'Sketch4',
     mounted() {
         this.createCanvas();
     },
