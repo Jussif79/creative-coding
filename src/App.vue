@@ -1,85 +1,53 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+import {
+    RouterLink,
+    RouterView
+} from 'vue-router';
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+<header>
+    <div>
+        <nav class="flex justify-center items-center mt-8 space-x-4">
+            <RouterLink to="/" class="px-4 py-2 hover:bg-gray-100 rounded transition">
+                Home
+            </RouterLink>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+            <div class="relative group">
+                <RouterLink to="/woche1" class="px-4 py-2 hover:bg-gray-100 rounded transition">
+                    Woche 1
+                </RouterLink>
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+                <div class="absolute left-0 mt-1 hidden group-hover:block bg-white shadow-lg rounded-md min-w-[160px] z-10">
+                    <RouterLink to="/woche1/sketch1" class="block px-4 py-2 text-sm hover:bg-gray-100 rounded-t-md">
+                        Sketch1
+                    </RouterLink>
+                    <RouterLink to="/woche1/sketch2" class="block px-4 py-2 text-sm hover:bg-gray-100">
+                        Sketch2
+                    </RouterLink>
+                    <RouterLink to="/woche1/sketch3" class="block px-4 py-2 text-sm hover:bg-gray-100">
+                        Sketch3
+                    </RouterLink>
+                    <RouterLink to="/woche1/sketch4" class="block px-4 py-2 text-sm hover:bg-gray-100">
+                        Sketch4
+                    </RouterLink>
+                    <RouterLink to="/woche1/image-filter" class="block px-4 py-2 text-sm hover:bg-gray-100 rounded-b-md">
+                        Image Filter
+                    </RouterLink>
+                </div>
+            </div>
+
+            <div class="relative group">
+                <RouterLink to="/woche2" class="px-4 py-2 hover:bg-gray-100 rounded transition">
+                    Woche 2
+                </RouterLink>
+                <div class="absolute left-0 mt-1 hidden group-hover:block bg-white shadow-lg rounded-md min-w-[160px] z-10">
+                
+                </div>
+            </div>
+        </nav>
     </div>
-  </header>
+</header>
 
-  <RouterView />
+<RouterView />
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
-</style>
