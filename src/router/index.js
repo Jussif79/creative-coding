@@ -34,6 +34,21 @@ const router = createRouter({
       name: 'sketch5',
       component: () => import('../components/woche1/ImageFilter.vue'),
     },
+    {
+      path: '/woche1/sort-image',
+      name: 'SortImage',
+      component: () => import('../components/woche1/SortImage.vue'),
+    },
+    {
+      path: '/woche1/resize-image',
+      name: 'ResizeImage',
+      component: () => import('../components/woche1/ResizeImage.vue'),
+    },
+    {
+      path: '/woche1/two-images',
+      name: 'TwoImages',
+      component: () => import('../components/woche1/TwoImages.vue'),
+    },
   ],
 })
 

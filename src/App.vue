@@ -34,6 +34,15 @@ import {
                     <RouterLink to="/woche1/image-filter" class="block px-4 py-2 text-sm hover:bg-green-100 rounded-b-md">
                         Image Filter
                     </RouterLink>
+                    <RouterLink to="/woche1/sort-image" class="block px-4 py-2 text-sm hover:bg-green-100 rounded-b-md">
+                        Sort Image
+                    </RouterLink>
+                    <RouterLink to="/woche1/resize-image" class="block px-4 py-2 text-sm hover:bg-green-100 rounded-b-md">
+                        Resize Image
+                    </RouterLink>
+                    <RouterLink to="/woche1/two-images" class="block px-4 py-2 text-sm hover:bg-green-100 rounded-b-md">
+                        2 Images
+                    </RouterLink>
                 </div>
             </div>
 
