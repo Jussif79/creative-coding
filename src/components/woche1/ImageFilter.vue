@@ -30,11 +30,25 @@ export default {
 
             p5.setup = () => {
                 p5.createCanvas(400, 400);
-                p5.image(img, 0, 0);
+                p5.pixelDensity(1);
             };
 
             p5.draw = () => {
+                p5.image(img, 0, 0);
 
+                img.loadPixels();
+
+                for (let y = 0; y < img.height; y += 2) {
+                    for (let x = 0; x < img.width; x += 2) {
+                        let i = (x + y * img.width) * 4;
+                        img.pixels[i + 0] = p5.mouseX;
+                        img.pixels[i + 1] = p5.mouseY;
+                        img.pixels[i + 2] = y;
+                    }
+                }
+
+                img.updatePixels();
+                p5.image(img, 0, 0);
             }
         }
     }
