@@ -49,6 +49,21 @@ const router = createRouter({
       name: 'TwoImages',
       component: () => import('../components/woche1/TwoImages.vue'),
     },
+    {
+      path: '/woche2/shapes',
+      name: 'Shapes',
+      component: () => import('../components/woche2/Shapes.vue'),
+    },
+    {
+      path: '/woche2/agent',
+      name: 'Agent',
+      component: () => import('../components/woche2/Agent.vue'),
+    },
+    {
+      path: '/woche2/abstract-algorithm',
+      name: 'AbstractAlgorithm',
+      component: () => import('../components/woche2/AbstractAlgorithm.vue'),
+    }
   ],
 })
 
