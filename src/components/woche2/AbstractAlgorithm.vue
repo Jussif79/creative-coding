@@ -31,8 +31,6 @@ export default {
       }
 
       p5.draw = () => {
-
-        
         circles.forEach((circle) => {
           p5.ellipse(circle.x, circle.y, circle.r)
         })

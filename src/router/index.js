@@ -63,6 +63,11 @@ const router = createRouter({
       path: '/woche2/abstract-algorithm',
       name: 'AbstractAlgorithm',
       component: () => import('../components/woche2/AbstractAlgorithm.vue'),
+    },
+    {
+      path: '/woche3/l-system',
+      name: 'L-System',
+      component: () => import('../components/woche3/L-System.vue'),
     }
   ],
 })
