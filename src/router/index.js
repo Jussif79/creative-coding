@@ -25,11 +25,6 @@ const router = createRouter({
       component: () => import('../components/woche1/Sketch3.vue'),
     },
     {
-      path: '/woche1/sketch4',
-      name: 'sketch4',
-      component: () => import('../components/woche1/Sketch4.vue'),
-    },
-    {
       path: '/woche1/image-filter',
       name: 'sketch5',
       component: () => import('../components/woche1/ImageFilter.vue'),

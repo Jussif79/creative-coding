@@ -30,9 +30,6 @@ import { RouterLink, RouterView } from 'vue-router'
             <RouterLink to="/woche1/sketch3" class="block px-4 py-2 text-sm hover:bg-green-100">
               Sketch3
             </RouterLink>
-            <RouterLink to="/woche1/sketch4" class="block px-4 py-2 text-sm hover:bg-green-100">
-              Sketch4
-            </RouterLink>
             <RouterLink
               to="/woche1/image-filter"
               class="block px-4 py-2 text-sm hover:bg-green-100 rounded-b-md"
