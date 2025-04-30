@@ -63,6 +63,11 @@ const router = createRouter({
       path: '/woche3/l-system',
       name: 'L-System',
       component: () => import('../components/woche3/L-System.vue'),
+    },
+    {
+      path: '/woche4/markov-chain',
+      name: 'MarkovChain',
+      component: () => import('../components/woche4/MarkovChain.vue'),
     }
   ],
 })

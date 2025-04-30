@@ -105,7 +105,14 @@ import { RouterLink, RouterView } from 'vue-router'
           </RouterLink>
           <div
             class="absolute left-0 mt-1 hidden group-hover:block bg-white shadow-lg rounded-md min-w-[160px] z-10"
-          ></div>
+          >
+            <RouterLink
+              to="/woche4/markov-chain"
+              class="block px-4 py-2 text-sm hover:bg-green-100 rounded-b-md"
+            >
+              Markov Chain
+            </RouterLink>
+          </div>
         </div>
         <div class="relative group">
           <RouterLink to="/woche2" class="px-4 py-2 hover:bg-green-100 rounded transition">
