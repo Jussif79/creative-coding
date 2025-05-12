@@ -4,6 +4,7 @@
       <div ref="canvasContainer1" class="border border-gray-300"></div>
       <div ref="canvasContainer2" class="border border-gray-300"></div>
     </div>
+    <div class="mt-5">Source: https://editor.p5js.org/KevinWorkman/sketches/lwn8I0r7J</div>
   </div>
 </template>
 
@@ -33,7 +34,7 @@ export default {
         }
         p.setup = () => {
           p.createCanvas(400, 400).parent(this.$refs.canvasContainer1)
-          p.image(img, 0, 0, 400, 400)
+          p.image(img, 0, 0, img.width, img.height)
         }
       })
 
@@ -51,7 +52,7 @@ export default {
           img.loadPixels()
 
           // Loop 100 times to speed up the animation.
-          for (let i = 0; i < 100; i++) {
+          for (let i = 0; i < 1000; i++) {
             p.sortPixels()
           }
 
