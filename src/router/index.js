@@ -68,7 +68,17 @@ const router = createRouter({
       path: '/woche4/markov-chain',
       name: 'MarkovChain',
       component: () => import('../components/woche4/MarkovChain.vue'),
-    }
+    },
+    {
+      path: '/woche6/game-of-life',
+      name: 'GameOfLife',
+      component: () => import('../components/woche6/GameOfLife.vue'),
+    },
+    {
+      path: '/woche6/101',
+      name: '101',
+      component: () => import('../components/woche6/101.vue')
+    },
   ],
 })
 
