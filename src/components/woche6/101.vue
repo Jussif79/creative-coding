@@ -69,81 +69,81 @@ export default {
           }
         }
 
-        grid[2][7] = 1
-        grid[2][8] = 1
-        grid[3][7] = 1
-        grid[3][8] = 1
-
-        grid[2][11] = 1
-        grid[2][12] = 1
-        grid[3][11] = 1
-        grid[3][12] = 1
-
-        grid[5][5] = 1
-        grid[5][6] = 1
         grid[5][7] = 1
         grid[5][8] = 1
-        grid[5][9] = 1
-        grid[5][10] = 1
+        grid[6][7] = 1
+        grid[6][8] = 1
+
         grid[5][11] = 1
         grid[5][12] = 1
-        grid[5][13] = 1
-        grid[5][14] = 1
+        grid[6][11] = 1
+        grid[6][12] = 1
 
-        grid[6][4] = 1
-        grid[6][15] = 1
-        grid[7][4] = 1
-        grid[7][5] = 1
-        grid[7][8] = 1
-        grid[7][9] = 1
-        grid[7][10] = 1
-        grid[7][11] = 1
-        grid[7][14] = 1
-        grid[7][15] = 1
+        grid[8][5] = 1
+        grid[8][6] = 1
+        grid[8][7] = 1
+        grid[8][8] = 1
+        grid[8][9] = 1
+        grid[8][10] = 1
+        grid[8][11] = 1
+        grid[8][12] = 1
+        grid[8][13] = 1
+        grid[8][14] = 1
 
-        grid[9][9] = 1
-        grid[9][10] = 1
+        grid[9][4] = 1
+        grid[9][15] = 1
+        grid[10][4] = 1
+        grid[10][5] = 1
         grid[10][8] = 1
+        grid[10][9] = 1
+        grid[10][10] = 1
         grid[10][11] = 1
-        grid[11][8] = 1
-        grid[11][11] = 1
+        grid[10][14] = 1
+        grid[10][15] = 1
+
         grid[12][9] = 1
         grid[12][10] = 1
-
-        grid[16][4] = 1
-        grid[16][15] = 1
-        grid[15][4] = 1
-        grid[15][5] = 1
-        grid[15][8] = 1
+        grid[13][8] = 1
+        grid[13][11] = 1
+        grid[14][8] = 1
+        grid[14][11] = 1
         grid[15][9] = 1
         grid[15][10] = 1
-        grid[15][11] = 1
-        grid[15][14] = 1
-        grid[15][15] = 1
 
+        grid[18][4] = 1
+        grid[18][15] = 1
+        grid[17][4] = 1
         grid[17][5] = 1
-        grid[17][6] = 1
-        grid[17][7] = 1
         grid[17][8] = 1
         grid[17][9] = 1
         grid[17][10] = 1
         grid[17][11] = 1
-        grid[17][12] = 1
-        grid[17][13] = 1
         grid[17][14] = 1
+        grid[17][15] = 1
 
+        grid[19][5] = 1
+        grid[19][6] = 1
         grid[19][7] = 1
         grid[19][8] = 1
-        grid[20][7] = 1
-        grid[20][8] = 1
-
+        grid[19][9] = 1
+        grid[19][10] = 1
         grid[19][11] = 1
         grid[19][12] = 1
-        grid[20][11] = 1
-        grid[20][12] = 1
+        grid[19][13] = 1
+        grid[19][14] = 1
+
+        grid[21][7] = 1
+        grid[21][8] = 1
+        grid[22][7] = 1
+        grid[22][8] = 1
+
+        grid[21][11] = 1
+        grid[21][12] = 1
+        grid[22][11] = 1
+        grid[22][12] = 1
 
 
-        p5.frameRate(10)
+        p5.frameRate(5)
 
         for (let i = 0; i < cols; i++) {
           for (let j = 0; j < rows; j++) {
