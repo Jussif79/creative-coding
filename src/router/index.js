@@ -10,6 +10,36 @@ const router = createRouter({
       component: HomeView,
     },
     {
+      path: '/woche1',
+      name: 'woche1',
+      component: () => import('../views/Woche1View.vue'),
+    },
+    {
+      path: '/woche2',
+      name: 'woche2',
+      component: () => import('../views/Woche2View.vue'),
+    },
+    {
+      path: '/woche3',
+      name: 'woche3',
+      component: () => import('../views/Woche3View.vue'),
+    },
+    {
+      path: '/woche4',
+      name: 'woche4',
+      component: () => import('../views/Woche4View.vue'),
+    },
+    {
+      path: '/woche6',
+      name: 'woche6',
+      component: () => import('../views/Woche6View.vue'),
+    },
+    {
+      path: '/woche7',
+      name: 'woche7',
+      component: () => import('../views/Woche7View.vue'),
+    },
+    {
       path: '/woche1/sketch1',
       name: 'sketch1',
       component: () => import('../components/woche1/Sketch1.vue'),
@@ -77,7 +107,12 @@ const router = createRouter({
     {
       path: '/woche6/101',
       name: '101',
-      component: () => import('../components/woche6/101.vue')
+      component: () => import('../components/woche6/101.vue'),
+    },
+    {
+      path: '/woche7/pointclouds',
+      name: 'PointClouds',
+      component: () => import('../components/woche7/PointClouds.vue'),
     },
   ],
 })

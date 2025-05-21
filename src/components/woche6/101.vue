@@ -12,12 +12,14 @@
 
 <script>
 import p5 from 'p5'
+import p from 'p5';
 
 export default {
   name: 'GameOfLife',
   data() {
     return {
-      isRunning: false
+      isRunning: false,
+      shouldDraw: false,
     }
   },
   mounted() {
@@ -34,6 +36,7 @@ export default {
     },
     toggleSimulation() {
       this.isRunning = !this.isRunning
+      this.shouldDraw = true
       if (this.p5) {
         if (this.isRunning) {
           this.p5.loop()
@@ -88,6 +91,7 @@ export default {
         grid[5][14] = 1
 
         grid[6][4] = 1
+        grid[6][15] = 1
         grid[7][4] = 1
         grid[7][5] = 1
         grid[7][8] = 1
@@ -96,8 +100,47 @@ export default {
         grid[7][11] = 1
         grid[7][14] = 1
         grid[7][15] = 1
-        grid[6][15] = 1
 
+        grid[9][9] = 1
+        grid[9][10] = 1
+        grid[10][8] = 1
+        grid[10][11] = 1
+        grid[11][8] = 1
+        grid[11][11] = 1
+        grid[12][9] = 1
+        grid[12][10] = 1
+
+        grid[16][4] = 1
+        grid[16][15] = 1
+        grid[15][4] = 1
+        grid[15][5] = 1
+        grid[15][8] = 1
+        grid[15][9] = 1
+        grid[15][10] = 1
+        grid[15][11] = 1
+        grid[15][14] = 1
+        grid[15][15] = 1
+
+        grid[17][5] = 1
+        grid[17][6] = 1
+        grid[17][7] = 1
+        grid[17][8] = 1
+        grid[17][9] = 1
+        grid[17][10] = 1
+        grid[17][11] = 1
+        grid[17][12] = 1
+        grid[17][13] = 1
+        grid[17][14] = 1
+
+        grid[19][7] = 1
+        grid[19][8] = 1
+        grid[20][7] = 1
+        grid[20][8] = 1
+
+        grid[19][11] = 1
+        grid[19][12] = 1
+        grid[20][11] = 1
+        grid[20][12] = 1
 
 
         p5.frameRate(10)
@@ -112,6 +155,9 @@ export default {
         }
       }
       p5.draw = () => {
+
+        if (!this.shouldDraw) return
+
         let next = []
         for (let i = 0; i < cols; i++) {
           next[i] = []

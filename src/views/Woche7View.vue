@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="justify-center">
-      <img src="../images/creative-coding-basics.jpg" alt="" />
+      <img src="../images/pointcloud.jpg" alt="" />
     </div>
     <div class="mt-15 flex justify-center">
       <h1 class="text-7xl font-mono font-bold mb-2 text-indigo-400">p5.js Sketches</h1>
